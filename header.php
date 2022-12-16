@@ -89,7 +89,11 @@
             </span>
         </div>
         <div class="ray-navbar-menu-menu">
-            
+            <section class="ray-navbar-menu-widget">
+                <?php include 'inc/widget/widget-style/ray-widget-style-1.php'; ?>
+                <?php include 'inc/widget/widget-style/ray-widget-style-2.php'; ?>
+                <?php include 'inc/widget/widget-style/ray-widget-style-3.php'; ?>
+            </section>
         </div>
     </nav>
 </section>

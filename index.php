@@ -393,9 +393,26 @@
                     </div>
                 </section>
 
+                <!---<section class="ray-posts-pagination ray-pagination-number">
+                    <span class="current">1</span>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </section>-->
+
+                <section class="ray-posts-pagination ray-pagination-next">
+                    <a href="#">Previous</a>
+                    <a href="#">Next</a>
+                </section>
+
             </section>
             <aside class="ray-sidebar">
-                awdawd
+                
+                <?php include 'inc/widget/widget-style/ray-widget-style-1.php'; ?>
+
+                <?php include 'inc/widget/widget-style/ray-widget-style-2.php'; ?>
+
+                <?php include 'inc/widget/widget-style/ray-widget-style-3.php'; ?>
+
             </aside>
             <div style="clear: both;"></div>
         </div>
