@@ -57,6 +57,7 @@
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="assets/js/js.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.nicescroll.min.js"></script>
 <script>
     var swiper = new Swiper(".swiper", { speed: 1200, slidesPerView: "auto", grabCursor: !0, spaceBetween: 0, loop: !0, parallax: !0, centeredSlides: !0, autoplay: { delay: 3500, disableOnInteraction: !1 } });
 </script>

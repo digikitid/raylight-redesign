@@ -23,3 +23,9 @@ example description
 
 = 1.5 =
 * Released: January 25, 2022
+
+== Credit ==
+* Fontawesome. https://fontawesome.com/. https://github.com/FortAwesome/Font-Awesome.
+* jQuery. https://jquery.com/. https://github.com/jquery/jquery.
+* Swiperjs. https://swiperjs.com/. https://github.com/nolimits4web/swiper.
+* Nicescroll. https://nicescroll.areaaperta.com/. https://github.com/inuyaksa/jquery.nicescroll.

@@ -79,6 +79,29 @@
     </div>
 </nav>
 
+<nav class="ray-navbar-mobile">
+    <div class="container">
+        
+        <div class="ray-navbar-mobile-container">
+            <div class="ray-navbar-mobile-menu-button">
+                <span><i class="fas fa-bars"></i></span>
+            </div>
+            <div class="ray-navbar-mobile-branding">
+                <!--<div class="ray-branding-mobile">
+                    <h1><a href="#">Raylight</a></h1>
+                </div>-->
+                <div class="ray-branding-mobile">
+                    <img src="assets/image/Raylight.png" alt="site logo">
+                </div>
+            </div>
+            <div class="ray-navbar-mobile-search-button">
+                <span><i class="fas fa-search"></i></span>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
 <section class="ray-navbar-menu-wrapper">
     <nav class="ray-navbar-menu">
         <div class="ray-navbar-menu-close">
