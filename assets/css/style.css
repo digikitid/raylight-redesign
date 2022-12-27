@@ -695,6 +695,12 @@ pre.wp-block-verse {}
     -moz-box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.05);
 }
 
+@media (min-width: 668px) {
+    .ray-navbar-mobile {
+        display: none;
+    }
+}
+
 .ray-navbar-mobile-container {
     display: flex;
     justify-content: space-between;
@@ -742,6 +748,64 @@ pre.wp-block-verse {}
     background: var(--white);
     color: var(--black);
 }
+
+/**
+ * Nav Mobile Bottom
+ * -----------------------------------------------------
+ */
+
+.ray-nav-mobile-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: var(--white);
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    padding: 0 2em;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.05);
+}
+
+@media (min-width: 668px) {
+    .ray-nav-mobile-bottom {
+        display: none;
+    }
+}
+
+.ray-nav-mobile-bottom ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ray-nav-mobile-bottom li a,
+.ray-nav-mobile-bottom li span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.ray-nav-mobile-bottom li span.menu-bars {
+    background: var(--blue);
+}
+
+.ray-nav-mobile-bottom li span.menu-bars svg line {
+    stroke: #fff;
+}
+
 
 /*////////////////////////////////////////////////////////*/
 
@@ -1270,6 +1334,11 @@ pre.wp-block-verse {}
     height: 150px;
 }
 
+.ray-main-posts-paged .ray-main-post:nth-child(4n) .ray-main-post-image {
+    width: 196px;
+    height: 140px;
+}
+
 .ray-main-post-image {
     overflow: hidden;
     margin: 0;
@@ -1305,6 +1374,13 @@ pre.wp-block-verse {}
         margin-bottom: .5em;
     }
 
+    .ray-main-posts-paged .ray-main-post:nth-child(4n) .ray-main-post-image {
+        display: table-cell;
+        width: 130px;
+        height: 90px;
+        margin-bottom: 0;
+    }
+
     .ray-main-post-image {
         width: 130px;
         height: 90px;
@@ -1319,6 +1395,10 @@ pre.wp-block-verse {}
         height: 220px;
     }
 
+    .ray-main-posts-paged .ray-main-post:nth-child(4n) .ray-main-post-image img {
+        height: 90px;
+    }
+
     .ray-main-post-entry {
         padding-left: 1em;
     }
@@ -1326,6 +1406,11 @@ pre.wp-block-verse {}
     .ray-main-post:nth-child(4n) .ray-main-post-entry {
         display: block;
         padding-left: 0;
+    }
+
+    .ray-main-posts-paged .ray-main-post:nth-child(4n) .ray-main-post-entry {
+        display: table-cell;
+        padding-left: 1em;
     }
 }
 
@@ -1361,6 +1446,177 @@ pre.wp-block-verse {}
 .ray-main-post-metadata a {
     font-weight: 700;
     color: inherit;
+}
+
+/**
+ * Main Single
+ * -----------------------------------------------------
+ */
+
+.ray-breadcrumbs {
+    font-size: var(--font-size-s);
+}
+
+.ray-breadcrumbs .breadcrumbs-separator {
+    font-size: xx-small;
+    color: var(--black-1);
+    margin: 0 .4em;
+}
+
+.ray-breadcrumbs span a {
+    color: var(--black);
+    font-weight: 500;
+}
+
+.ray-breadcrumbs span {
+    color: var(--black-1);
+}
+
+.ray-main-single-title {
+    display: block;
+    text-align: center;
+    font-size: var(--font-size-xxl);
+    font-weight: 600;
+    margin: .5em 0;
+}
+
+.ray-main-single-metadata {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ray-main-single-metadata span {
+    font-size: var(--font-size-s);
+    color: var(--black-1);
+}
+
+.ray-main-single-metadata span a {
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.ray-main-single-share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ray-main-single-share .share-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ray-main-single-share span {
+    font-size: var(--font-size-xs);
+    color: var(--black-1);
+    margin-right: .5em;
+}
+
+.ray-main-single-share ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ray-main-single-share ul li {
+    float: left;
+}
+
+.ray-main-single-share ul li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    color: var(--white);
+    margin: 0 .2em;
+}
+
+.ray-main-single-share .fb {
+    background: #3b5998;
+}
+
+.ray-main-single-share .tw {
+    background: #55acee;
+}
+
+.ray-main-single-share .wa {
+    background: #43d854;
+}
+
+.ray-main-single-thumbnail {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.ray-main-single-thumbnail img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.ray-main-single-thumbnail figcaption {
+    display: block;
+    font-size: var(--font-size-xs);
+    color: var(--black-1);
+    margin-top: .4em;
+}
+
+.ray-content-pagination {
+    overflow: hidden;
+    margin-top: 1em;
+}
+
+.page-links-title {
+    display: block;
+    font-weight: 600;
+    font-size: var(--font-size-s);
+    margin-bottom: .5em;
+}
+
+.post-page-numbers {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    background: var(--border);
+    color: inherit;
+    font-size: var(--font-size-s);
+}
+
+.post-page-numbers.current,
+.post-page-numbers:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.ray-content-tags {
+    overflow: hidden;
+    margin-top: 1em;
+}
+
+.ray-content-tags a {
+    display: inline-block;
+    float: left;
+    padding: .4em .8em;
+    margin-right: .4em;
+    margin-bottom: .4em;
+    border-radius: 5px;
+    background: var(--border);
+    color: var(--black-1);
+    font-size: var(--font-size-s);
+}
+
+.ray-content-tags a:hover {
+    background: var(--blue);
+    color: var(--white);
 }
 
 /**
